@@ -1,54 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foxtree Countertops</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nameeee Countertops</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    window.onbeforeunload = () => window.scrollTo(0, 0);
+  </script>
 </head>
 <body>
-    <img src="assets/countertop.jpg" alt="Hero background" class="hero-bg fade-zoom" data-delay="1000"/>
-    <div class="container">
-        <div class="hero-wrapper">
-            <header>
-                <h1 class="logo fade-down" data-delay="1500">FOXTREE</h1>
-    
-                <nav>
-                    <a href="#" class="fade-down" data-delay="1500">Home</a>
-                    <a href="#" class="fade-down" data-delay="2000">Products</a>
-                    <a href="#" class="fade-down" data-delay="2500">Gallery</a>
-                    <a href="#" class="fade-down" data-delay="3000">Free Bid</a>            
-                </nav>
-    
-                <button class="btn-number fade-down" data-delay="1500">(432) 123-4567</button>
-            </header>
-            <main>
-                <div class="content">
-                    <h1 class="fade-zoom" data-delay="1000">Crafted to <br>Elevate Every <br>Space</h1>
-    
-                    <p class="description fade-zoom" data-delay="1500">
-                        From new builds to remodels, our custom countertops bring timeless style and everyday durability to kitchens, bathrooms, and workspaces.
-                    </p>
-    
-                    <div class="buttons fade-zoom" data-delay="2000">
-                        <a href="#" class="btn-bid fade-zoom" data-delay="2000"></a>
-                        <!-- <a href="https://docs.google.com/forms/d/1VLTHsoIIJH4Lvqw-Va9YjT3Q0auoWawd2-BngruAYDs/edit" class="btn-bid fade-zoom" data-delay="2000"></a> -->
-                    </div>
-                </div>
-            </main>
+  <div class="site">
+    <!-- NAV + HERO grouped into 100vh block -->
+    <div class="cover">
+      <header class="main-header">
+        <h1 class="logo fade-down" data-delay="1500">NAMEEEE</h1>
+
+        <nav>
+          <a href="#" class="fade-down" data-delay="1500">Home</a>
+          <a href="#" class="fade-down" data-delay="2000">Products</a>
+          <a href="#" class="fade-down" data-delay="2500">Gallery</a>
+          <a href="#" class="fade-down" data-delay="3000">Free Bid</a>
+        </nav>
+
+        <button class="btn-number fade-down" data-delay="1500">(432) 123-4567</button>
+      </header>
+
+      <section class="hero-section">
+        <img src="assets/countertop.jpg" alt="Hero background" class="hero-bg fade-zoom" data-delay="1000"/>
+        <div class="hero-content">
+          <h1 class="fade-zoom" data-delay="1000">Crafted to <br />Elevate Every <br />Space</h1>
+
+          <p class="description fade-zoom" data-delay="1500">
+            From new builds to remodels, our custom countertops bring timeless style and everyday durability to kitchens, 
+            bathrooms, and workspaces.
+          </p>
+
+          <div class="buttons fade-zoom" data-delay="2000">
+            <a href="#" class="btn-bid fade-zoom" data-delay="2000"></a>
+          </div>
         </div>
+      </section>
     </div>
-    <script>
-        window.addEventListener('load', () => {
-          const fadeElements = document.querySelectorAll('.fade-down, .fade-zoom');
-      
-          fadeElements.forEach(el => {
-            const delay = parseInt(el.getAttribute('data-delay')) || 0;
-            setTimeout(() => {
-              el.classList.add('visible');
-            }, delay);
-          });
-        });
-      </script>      
+    
+    <!-- Othe sections -->
+    <section class="our-services">
+      <!-- Placeholder -->
+    </section>
+    
+    <section class="why-us">
+      <!-- Placeholder -->
+    </section>
+    
+    <section class="gallery">
+      <!-- Placeholder -->
+    </section>
+    
+    <section class="Reviews">
+      <!-- Placeholder -->
+    </section>
+    
+    <section class="map">
+      <!-- Placeholder -->
+    </section>
+  </div>
+
+  <footer></footer>
+  <script>
+    window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
+
+      const fadeElements = document.querySelectorAll('.fade-down, .fade-zoom');
+      fadeElements.forEach(el => {
+        const delay = parseInt(el.getAttribute('data-delay')) || 0;
+        setTimeout(() => {
+          el.classList.add('visible');
+        }, delay);
+      });
+    });
+  </script>
 </body>
 </html>
