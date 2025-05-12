@@ -11,6 +11,26 @@ body {
     line-height: 1.5;
 }
 
+.hero-wrapper {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 6rem; /* ← offset from top to appear below nav */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 6rem); /* ← subtract header height */
+    object-fit: cover;
+    filter: brightness(0.9);
+    z-index: -1;
+    pointer-events: none;
+}
+
+
 /* CONTAINER */
 .container {
     width: 100%;
@@ -51,11 +71,13 @@ nav a {
 }
 
 nav a:hover {
-    color: red;
+    /* color: #1e90ff; */
+    text-decoration: underline;
 }
 
 .btn-number {
-    background-color: #a7a7a7; /* Change this */
+    background-color: #ffffff; /* Change this */
+    box-shadow: 5px 5px 15px rgb(212, 212, 212);
     color: black; /* Change this */
     padding: 0.8rem 2rem;
     border-radius: 50px;
@@ -98,7 +120,7 @@ main{
     font-size: 1.2rem;
     letter-spacing: 0.05em;
     max-width: 35rem;
-    color: rgb(84, 84, 84);
+    color: rgb(54, 54, 54);
 }
 
 .buttons {
