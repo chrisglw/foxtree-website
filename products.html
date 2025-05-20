@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Foxtree | Products</title>
+  <link rel="stylesheet" href="template.css" />
+  <link rel="stylesheet" href="styles/products.css" />
+  <script>
+    window.onbeforeunload = () => window.scrollTo(0, 0);
+  </script>
+</head>
+<body>
+  <div class="site">
+    <header class="main-header">
+      <h1 class="logo fade-down" data-delay="100">NAME</h1>
+
+      <nav>
+        <a href="index.html" class="fade-down" data-delay="400">Home</a>
+        <a href="products.html" class="fade-down active" data-delay="600">Products</a>
+        <a href="gallery.html" class="fade-down" data-delay="800">Gallery</a>
+        <a href="free-bid.html" class="fade-down" data-delay="1000">Free Bid</a>
+      </nav>
+
+      <button class="btn-number fade-down" data-delay="100">(432) 123-4567</button>
+    </header>
+
+    <main class="main-content">
+      <!-- Materials Section -->
+      <section class="product-section">
+        <h1 class="section-title fade-down" data-delay="100">Samples</h1>
+        <p class="section-description fade-down" data-delay="200">
+          Premium materials for every style and budget.
+        </p>
+        
+        <div class="material-filters fade-down" data-delay="300">
+          <button class="material-filter active" data-filter="all">All Materials</button>
+          <button class="material-filter" data-filter="material_1">Material 1</button>
+          <button class="material-filter" data-filter="material_2">Material 2</button>
+          <button class="material-filter" data-filter="material_3">Material 3</button>
+          <button class="material-filter" data-filter="material_4">Material 4</button>
+        </div>
+        
+        <div class="materials-grid">
+          <!-- Material Sample 1 -->
+          <div class="material-sample fade-zoom" data-delay="100" data-material="material_1">
+            <img src="assets/" alt="material_1" />
+            <div class="material-info">
+              <h3>Material Name</h3>
+              <p>Description</p>
+              <span class="material-badge material_1">Material 1</span>
+            </div>
+          </div>
+          
+          <!-- Material Sample 2 -->
+          <div class="material-sample fade-zoom" data-delay="150" data-material="material_2">
+            <img src="assets/" alt="material_2" />
+            <div class="material-info">
+              <h3>Material 2 Name</h3>
+              <p>Description</p>
+              <span class="material-badge material_2">material_2</span>
+            </div>
+          </div>
+          
+          <!-- Material Sample 3 -->
+          <div class="material-sample fade-zoom" data-delay="200" data-material="material_3">
+            <img src="assets/materials/marble-1.jpg" alt="material_3" />
+            <div class="material-info">
+              <h3>Material3</h3>
+              <p>Description</p>
+              <span class="material-badge material_3">material_3</span>
+            </div>
+          </div>
+          
+          <!-- Material Sample 4 -->
+          <div class="material-sample fade-zoom" data-delay="250" data-material="material_4">
+            <img src="assets/materials/solid-1.jpg" alt="material_4" />
+            <div class="material-info">
+              <h3>material 4</h3>
+              <p>Description</p>
+              <span class="material-badge material_4">material_4</span>
+            </div>
+          </div>
+          
+          <!-- Add more samples here in case client has more than 4 -->
+
+        </div>
+      </section>
+
+      <!-- Cuts Section -->
+      <section class="product-section">
+        <h1 class="section-title fade-down" data-delay="400">Cuts samples</h1>
+        <p class="section-description fade-down" data-delay="500">
+          Custom edge treatments to complement your countertop design.
+        </p>
+        
+        <div class="cuts-grid">
+          <!-- Cut Sample 1 -->
+          <div class="cut-sample fade-zoom" data-delay="600">
+            <img src="assets/" alt="cut_1" />
+            <div class="cut-info">
+              <h3>Cut 1</h3>
+              <p>Description</p>
+            </div>
+          </div>
+          
+          <!-- Cut Sample 2 -->
+          <div class="cut-sample fade-zoom" data-delay="650">
+            <img src="assets/" alt="cut_1" />
+            <div class="cut-info">
+              <h3>Cut 1</h3>
+              <p>Description</p>
+            </div>
+          </div>
+          
+          <!-- Cut Sample 3 -->
+          <div class="cut-sample fade-zoom" data-delay="700">
+            <img src="assets/" alt="cut_1" />
+            <div class="cut-info">
+              <h3>Cut 1</h3>
+              <p>Description</p>
+            </div>
+          </div>
+          
+          <!-- Cut Sample 4 -->
+          <div class="cut-sample fade-zoom" data-delay="750">
+            <img src="assets/" alt="cut_1" />
+            <div class="cut-info">
+              <h3>Cut 1</h3>
+              <p>Description</p>
+            </div>
+          </div>
+          
+          <!-- Add more samples here in case client has more than 4 -->
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="product-cta fade-down" data-delay="900">
+        <h2>Need Help Choosing?</h2>
+        <p>Our experts can guide you to the perfect materials and edge profiles for your project</p>
+        <a href="free-bid.html" class="btn-cta">Get a Free Bid</a>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section contact-info">
+        <h3>Contact Us</h3>
+        <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+        <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+      </div>
+
+      <div class="footer-section social-media">
+        <h3>Follow Us</h3>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <img src="assets/Facebook_Logo_Primary.png" alt="Facebook" />
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <img src="assets/instagram_icon.png" alt="Instagram" />
+        </a>
+      </div>
+
+      <div class="footer-section developed-by">
+        <h3>Developed By</h3>
+        <p>Me</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Company Name. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
+
+      // Initialize fade animations
+      const fadeElements = document.querySelectorAll('.fade-down, .fade-zoom');
+      fadeElements.forEach(el => {
+        const delay = parseInt(el.getAttribute('data-delay')) || 0;
+        setTimeout(() => {
+          el.classList.add('visible');
+        }, delay);
+      });
+
+      // Material filter functionality
+      const materialFilters = document.querySelectorAll('.material-filter');
+      const materialSamples = document.querySelectorAll('.material-sample');
+
+      materialFilters.forEach(button => {
+        button.addEventListener('click', () => {
+          // Update active button
+          materialFilters.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+
+          // Filter items
+          const filterValue = button.getAttribute('data-filter');
+          
+          materialSamples.forEach(item => {
+            if (filterValue === 'all' || item.getAttribute('data-material') === filterValue) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
