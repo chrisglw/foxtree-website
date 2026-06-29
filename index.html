@@ -4,27 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Foxtree Countertops</title>
+  <link rel="stylesheet" href="styles/base.css" />
   <link rel="stylesheet" href="styles/styles.css" />
-  <script>
-    window.onbeforeunload = () => window.scrollTo(0, 0);
-  </script>
 </head>
 <body>
   <div class="site">
-    <!-- NAV + HERO grouped into 100vh block -->
     <div class="cover">
-      <header class="main-header">
-        <h1 class="logo fade-down" data-delay="100">FOXTREE</h1>
-
-        <nav>
-          <a href="index.html" class="fade-down" data-delay="400">Home</a>
-          <a href="products.html" class="fade-down" data-delay="600">Products</a>
-          <a href="gallery.html" class="fade-down" data-delay="800">Gallery</a>
-          <a href="free-bid.html" class="fade-down" data-delay="1000">Free Bid</a>
-        </nav>
-
-        <button class="btn-number fade-down" data-delay="100">(432) 123-4567</button>
-      </header>
+      <div id="site-nav"></div>
 
       <section class="hero-section">
         <img src="assets/countertop.jpg" alt="Hero background" class="hero-bg fade-zoom" data-delay="100"/>
@@ -32,153 +18,108 @@
           <h1 class="fade-zoom" data-delay="100">Crafted to <br />Elevate Every <br />Space</h1>
 
           <p class="description fade-zoom" data-delay="500">
-            From new builds to remodels, our custom countertops bring timeless style and everyday durability to kitchens, 
+            From new builds to remodels, our custom countertops bring timeless style and everyday durability to kitchens,
             bathrooms, and workspaces.
           </p>
 
           <div class="buttons fade-zoom" data-delay="1000">
-            <a href="#" class="btn-bid fade-zoom" data-delay="200"></a>
+            <a href="free-bid.html" class="btn-bid"></a>
           </div>
         </div>
       </section>
     </div>
-    
-    <!-- Othe sections -->
-    <!-- OUR SERVICES -->
+
     <section class="our-services">
-    <h2 class="section-title">Our Services</h2>
-    <div class="service-items">
+      <h2 class="section-title">Our Services</h2>
+      <div class="service-items">
         <div class="service">
-        <img src="assets/installation.png" alt="Installation" />
-        <p>Countertop Installation</p>
+          <img src="assets/installation.png" alt="Installation" />
+          <p>Countertop Installation</p>
         </div>
         <div class="service">
-        <img src="assets/r-c.png" alt="Residential/Commercial" />
-        <p>Residential & Commercial</p>
+          <img src="assets/r-c.png" alt="Residential/Commercial" />
+          <p>Residential &amp; Commercial</p>
         </div>
         <div class="service">
-        <img src="assets/repair.png" alt="Repair" />
-        <p>Countertop Repair</p>
+          <img src="assets/repair.png" alt="Repair" />
+          <p>Countertop Repair</p>
         </div>
-    </div>
+      </div>
     </section>
 
-    <!-- WHY US -->
     <section class="why-us">
-    <h2 class="section-title">Why Choose Us</h2>
-    <div class="why-columns">
+      <h2 class="section-title">Why Choose Us</h2>
+      <div class="why-columns">
         <ul>
-        <li>Experienced Craftsmanship</li>
-        <li>Top-Quality Materials</li>
-        <li>Free Estimates</li>
+          <li>Experienced Craftsmanship</li>
+          <li>Top-Quality Materials</li>
+          <li>Free Estimates</li>
         </ul>
-    </div>
+      </div>
     </section>
 
-    <!-- GALLERY -->
     <section class="gallery">
-    <h2 class="section-title">Featured Gallery</h2>
-    <p class="gallery-desc">View our completed countertop projects</p>
-    <div class="gallery-items">
-        <img src="assets/kitchen1.png" alt="Project 1" />
-        <img src="assets/kitchen2.jpeg" alt="Project 2" />
-        <img src="assets/office1.jpeg" alt="Project 3" />
-    </div>
-    <div class="gallery-btn-wrapper">
+      <h2 class="section-title">Featured Gallery</h2>
+      <p class="gallery-desc">View our completed countertop projects</p>
+      <div class="gallery-items">
+        <img src="assets/gallery/kitchen1.png" alt="Project 1" />
+        <img src="assets/gallery/kitchen2.jpeg" alt="Project 2" />
+        <img src="assets/gallery/office1.jpeg" alt="Project 3" />
+      </div>
+      <div class="gallery-btn-wrapper">
         <a href="gallery.html" class="btn-gallery">See More Projects</a>
-    </div>
+      </div>
     </section>
 
-    <!-- REVIEWS -->
     <section class="reviews">
-    <h2 class="section-title">Google Reviews</h2>
-    <div class="review-items">
+      <h2 class="section-title">Google Reviews</h2>
+      <div class="review-items">
         <div class="review">
-        <p>"I had the best experience with these guys! I was DIY remodeling my bathroom. 
-            I removed and threw away the old existing countertop and purchased a new one 
-            from Lowes. They sold me a kitchen counter that was too big. We found Foxtree 
-            and went to see them less than 3 hours later I had a new custom built counter 
-            for a very fair price. I'm 99% done with my project only because of Foxtree. 
-            Mike is also a great guy. We had some really good visits. I recommend these guys 
-            highly. They will help you. They care about your project and they are more than 
-            fair on pricing."</p>
-        <span>- Josh Johnson (Jbenjimac)</span>
+          <p>"I had the best experience with these guys! I was DIY remodeling my bathroom.
+              I removed and threw away the old existing countertop and purchased a new one
+              from Lowes. They sold me a kitchen counter that was too big. We found Foxtree
+              and went to see them less than 3 hours later I had a new custom built counter
+              for a very fair price. I'm 99% done with my project only because of Foxtree.
+              Mike is also a great guy. We had some really good visits. I recommend these guys
+              highly. They will help you. They care about your project and they are more than
+              fair on pricing."</p>
+          <span>- Josh Johnson (Jbenjimac)</span>
         </div>
         <div class="review">
-        <p>"Foxtree replaced all the kitchen countertops in my rental house and did a great 
-            job. They communicated quickly and well, gave me a good price, and the new 
-            countertop looks great. My only regret is not having more countertops for them 
-            to replace!"</p>
-        <span>- Ashton Shumway</span>
+          <p>"Foxtree replaced all the kitchen countertops in my rental house and did a great
+              job. They communicated quickly and well, gave me a good price, and the new
+              countertop looks great. My only regret is not having more countertops for them
+              to replace!"</p>
+          <span>- Ashton Shumway</span>
         </div>
         <div class="review">
-        <p>"Remodeled my kitchen during the pandemic when building materials weren't 
-            difficult to get. Consequently, I had to reschedule several times because 
-            I was waiting on a singles base cabinet before my countertops could go in. 
-            Mike was extremely accommodating. When the time came to install he did a 
-            fantastic job. My countertops turned out beautiful. I am so pleased. I have 
-            no reservations recommending them to anyone looking for countertops. I feel 
-            I have made a friend for life."</p>
-        <span>- Mark Vought</span>
+          <p>"Remodeled my kitchen during the pandemic when building materials weren't
+              difficult to get. Consequently, I had to reschedule several times because
+              I was waiting on a singles base cabinet before my countertops could go in.
+              Mike was extremely accommodating. When the time came to install he did a
+              fantastic job. My countertops turned out beautiful. I am so pleased. I have
+              no reservations recommending them to anyone looking for countertops. I feel
+              I have made a friend for life."</p>
+          <span>- Mark Vought</span>
         </div>
-    </div>
+      </div>
     </section>
 
-    <!-- MAP -->
     <section class="map">
-    <h2 class="section-title">Find Us</h2>
-    <div class="map-container">
+      <h2 class="section-title">Find Us</h2>
+      <div class="map-container">
         <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.65161538321!2d-112.06092290000001!3d43.46786999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53545e40cf2d2b83%3A0x15df58e5085f62ea!2sFoxtree!5e0!3m2!1sen!2sus!4v1747083020782!5m2!1sen!2sus"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.65161538321!2d-112.06092290000001!3d43.46786999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53545e40cf2d2b83%3A0x15df58e5085f62ea!2sFoxtree!5e0!3m2!1sen!2sus!4v1747083020782!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-    </div>
+      </div>
     </section>
-
   </div>
 
-  <footer class="site-footer">
-    <div class="footer-content">
-        <div class="footer-section contact-info">
-        <h3>Contact Us</h3>
-        <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
-        <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
-        </div>
+  <div id="site-footer"></div>
 
-        <div class="footer-section social-media">
-        <h3>Follow Us</h3>
-        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-            <img src="assets/Facebook_Logo_Primary.png" alt="Facebook" />
-        </a>
-        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-            <img src="assets/instagram_icon.png" alt="Instagram" />
-        </a>
-        </div>
-
-        <div class="footer-section developed-by">
-        <h3>Developed By</h3>
-        <p>Me</p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        &copy; 2025 Foxtree llc. All rights reserved.
-    </div>
-  </footer>
-
-  <script>
-    window.addEventListener('load', () => {
-      window.scrollTo(0, 0);
-
-      const fadeElements = document.querySelectorAll('.fade-down, .fade-zoom');
-      fadeElements.forEach(el => {
-        const delay = parseInt(el.getAttribute('data-delay')) || 0;
-        setTimeout(() => {
-          el.classList.add('visible');
-        }, delay);
-      });
-    });
-  </script>
+  <script src="assets/js/components.js"></script>
 </body>
 </html>

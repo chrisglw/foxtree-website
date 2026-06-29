@@ -1,0 +1,70 @@
+.site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 4rem 5rem;
+}
+
+.bid-section {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bid-section .section-title {
+  margin-bottom: 1.5rem;
+}
+
+.bid-lead {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.bid-sub {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.bid-checklist {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.bid-checklist p {
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.bid-checklist ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #555;
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .bid-checklist {
+    padding: 1.25rem 1.5rem;
+  }
+}

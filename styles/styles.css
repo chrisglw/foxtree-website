@@ -1,22 +1,3 @@
-/* Reset + Base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: black;
-  line-height: 1.5;
-  scroll-behavior: smooth;
-}
-
-.site {
-  width: 100%;
-}
-
-/* ========= NAV + HERO GROUP ========= */
 .cover {
   display: flex;
   flex-direction: column;
@@ -24,61 +5,6 @@ body {
   width: 100%;
 }
 
-/* HEADER */
-.main-header {
-  flex-shrink: 0;
-  background-color: white;
-  padding: 1rem 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.logo {
-  font-size: 3rem;
-  font-weight: 300;
-}
-
-nav {
-  display: flex;
-  gap: 3rem;
-  margin-left: -5%;
-}
-
-nav a {
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.2s ease;
-  letter-spacing: 0.1rem;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.btn-number {
-  background-color: white;
-  box-shadow: 5px 5px 15px rgb(212, 212, 212);
-  color: black;
-  padding: 0.8rem 2rem;
-  border-radius: 50px;
-  border: none;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.btn-number:hover {
-  background-color: black;
-  color: white;
-}
-
-/* ========= HERO ========= */
 .hero-section {
   position: relative;
   flex-grow: 1;
@@ -170,39 +96,6 @@ nav a:hover {
   }
 }
 
-/* Fade Animations */
-.fade-down {
-  opacity: 0;
-  transform: translateY(-30px);
-  transition: opacity 1.5s ease, transform 1.5s ease;
-}
-
-.fade-down.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.fade-zoom {
-  opacity: 0;
-  transform: scale(0.95);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.fade-zoom.visible {
-  opacity: 1;
-  transform: scale(1);
-}
-
-/* Placeholder for more sections */
-/* SHARED */
-.section-title {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  font-weight: 600;
-}
-
-/* ========== OUR SERVICES ========== */
 .our-services {
   background-color: white;
   padding: 4rem 2rem;
@@ -232,7 +125,6 @@ nav a:hover {
   color: #333;
 }
 
-/* ========== WHY CHOOSE US ========== */
 .why-us {
   background-color: #f7f7f7;
   color: black;
@@ -258,7 +150,6 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
-/* ========== GALLERY ========== */
 .gallery {
   background-color: white;
   padding: 4rem 2rem;
@@ -307,10 +198,8 @@ nav a:hover {
   background-color: #1e90ff;
 }
 
-/* ========== REVIEWS ========== */
 .reviews {
   background-color: white;
-  /* background-color: #f7f7f7; */
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -343,7 +232,6 @@ nav a:hover {
   color: #555;
 }
 
-/* ========== MAP ========== */
 .map {
   padding: 4rem 2rem;
   background-color: white;
@@ -365,74 +253,7 @@ nav a:hover {
   border-radius: 8px;
 }
 
-/* Footer */
-.site-footer {
-  background-color: #f1f1f1;
-  color: black;
-  padding: 2rem 1rem 0.5rem;
-  font-size: 0.95rem;
-}
-
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  border-bottom: 1px solid #333;
-  padding-bottom: 1.5rem;
-}
-
-.footer-section h3 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  color: black;
-}
-
-.footer-section a {
-  color: #444343;
-  text-decoration: none;
-}
-
-.footer-section a:hover {
-  color: #1e90ff;
-}
-
-.footer-section img {
-  width: 30px;
-  height: 30px;
-  margin-right: 1rem;
-  vertical-align: middle;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 1rem;
-  color: black;
-}
-
-/* ================== RESPONSIVE STYLES ================== */
-
-/* Tablets and smaller laptops (max-width: 1024px) */
 @media (max-width: 1024px) {
-  .btn-number {
-    display: none;
-  }
-
-  .main-header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem 2rem;
-  }
-
-  nav {
-    flex-direction: column;
-    gap: 1rem;
-    margin-left: 0;
-    margin-top: 1rem;
-  }
-
   .hero-section {
     padding-left: 5%;
   }
@@ -455,38 +276,9 @@ nav a:hover {
   .map-container {
     height: 300px;
   }
-
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-section {
-    max-width: 300px;
-  }
 }
 
-/* Phones and small devices (max-width: 768px) */
 @media (max-width: 768px) {
-  .btn-number {
-    display: none;
-  }
-
-  .main-header {
-    padding: 1rem;
-    align-items: center;
-  }
-
-  .logo {
-    font-size: 2.2rem;
-    text-align: center;
-  }
-
-  nav {
-    align-items: center;
-  }
-
   .hero-content h1 {
     font-size: 2.2rem;
     margin: 1rem 0;
@@ -509,10 +301,6 @@ nav a:hover {
     align-items: center;
   }
 
-  .section-title {
-    font-size: 2rem;
-  }
-
   .service img,
   .gallery-items img {
     width: 100%;
@@ -523,7 +311,7 @@ nav a:hover {
     width: 100px;
     height: 100px;
   }
-  
+
   .why-columns {
     flex-direction: column;
     align-items: center;
@@ -540,22 +328,8 @@ nav a:hover {
   .review {
     max-width: 90%;
   }
-
-  .footer-section h3 {
-    font-size: 1rem;
-  }
-
-  .footer-section a,
-  .footer-section p {
-    font-size: 0.9rem;
-  }
-
-  .footer-bottom {
-    font-size: 0.8rem;
-  }
 }
 
-/* Tiny devices (max-width: 480px) */
 @media (max-width: 480px) {
   .hero-content h1 {
     font-size: 1.8rem;
@@ -569,15 +343,9 @@ nav a:hover {
     font-size: 0.9rem;
   }
 
-  .section-title {
-    font-size: 1.6rem;
-  }
-
-  .btn-number,
   .btn-gallery {
     width: 100%;
     font-size: 0.95rem;
     padding: 0.6rem 1rem;
   }
 }
-
