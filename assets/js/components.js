@@ -24,10 +24,26 @@ function renderNav() {
   document.getElementById('site-nav').innerHTML = `
     <header class="main-header">
       <h1 class="logo">FOXTREE</h1>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <nav>${navLinks}</nav>
       <a href="tel:+12082411858" class="btn-number">(208) 241-1858</a>
     </header>
   `;
+
+  const hamburger = document.querySelector('.hamburger');
+  const header = document.querySelector('.main-header');
+  hamburger.addEventListener('click', () => {
+    const isOpen = header.classList.toggle('nav-open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      header.classList.remove('nav-open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
 }
 
 function renderFooter() {

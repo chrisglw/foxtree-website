@@ -6,7 +6,7 @@
 
 .main-content {
   flex: 1;
-  padding: 4rem 5rem;
+  padding: clamp(2rem, 6vw, 4rem) clamp(1rem, 8vw, 5rem);
 }
 
 .bid-section {
@@ -53,18 +53,8 @@
   color: #555;
 }
 
-@media (max-width: 1024px) {
-  .main-content {
-    padding: 3rem 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .main-content {
-    padding: 2rem 1.5rem;
-  }
-
+@media (max-width: 480px) {
   .bid-checklist {
-    padding: 1.25rem 1.5rem;
+    padding: 1.25rem 1.25rem;
   }
 }
