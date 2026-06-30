@@ -3,22 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Foxtree | Gallery</title>
+  <title>Project Gallery | Foxtree Countertops</title>
+  <meta name="description" content="Browse Foxtree Countertops' portfolio of custom kitchen, bathroom, and commercial countertop installations in Idaho." />
+  <link rel="canonical" href="https://foxtreecountertops.com/gallery.html" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Project Gallery | Foxtree Countertops" />
+  <meta property="og:description" content="Browse our portfolio of custom kitchen, bathroom, and commercial countertop installations." />
+  <meta property="og:url" content="https://foxtreecountertops.com/gallery.html" />
+
   <link rel="stylesheet" href="styles/base.css" />
   <link rel="stylesheet" href="styles/gallery.css" />
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="site">
     <div id="site-nav"></div>
 
-    <main class="main-content">
-      <section class="gallery-intro">
-        <h1 class="section-title fade-down" data-delay="100">Our Work Gallery</h1>
+    <main id="main-content" class="main-content">
+      <section class="gallery-intro" aria-labelledby="gallery-heading">
+        <h1 id="gallery-heading" class="section-title fade-down" data-delay="100">Our Work Gallery</h1>
         <p class="gallery-description fade-down" data-delay="300">
           Explore our portfolio of custom countertop installations. Each piece is crafted with precision
           and designed to elevate your space.
         </p>
-        <div class="filter-buttons fade-down" data-delay="500">
+        <div class="filter-buttons fade-down" data-delay="500" role="group" aria-label="Filter projects by category">
           <button class="filter-btn active" data-filter="all">All Projects</button>
           <button class="filter-btn" data-filter="kitchen">Kitchens</button>
           <button class="filter-btn" data-filter="bathroom">Bathrooms</button>
@@ -26,59 +36,80 @@
         </div>
       </section>
 
-      <section class="gallery-grid">
+      <section class="gallery-grid" aria-label="Project photos">
         <div class="gallery-item fade-zoom" data-delay="100" data-category="kitchen">
-          <img src="assets/gallery/kitchen1.png" alt="Kitchen countertop installation" />
+          <picture>
+            <source srcset="assets/gallery/kitchen1.webp" type="image/webp" />
+            <img src="assets/gallery/kitchen1.png" alt="Kitchen countertop installation" width="400" height="300" loading="lazy" />
+          </picture>
           <div class="gallery-overlay">
-            <h3>Kitchen</h3>
+            <p>Kitchen</p>
           </div>
         </div>
 
         <div class="gallery-item fade-zoom" data-delay="200" data-category="bathroom">
-          <img src="assets/gallery/bathroom1.jpeg" alt="Bathroom countertop installation" />
+          <picture>
+            <source srcset="assets/gallery/bathroom1.webp" type="image/webp" />
+            <img src="assets/gallery/bathroom1.jpeg" alt="Bathroom countertop installation" width="400" height="300" loading="lazy" />
+          </picture>
           <div class="gallery-overlay">
-            <h3>Bathroom</h3>
+            <p>Bathroom</p>
           </div>
         </div>
 
         <div class="gallery-item fade-zoom" data-delay="300" data-category="kitchen">
-          <img src="assets/gallery/kitchen2.jpeg" alt="Kitchen countertop installation" />
+          <picture>
+            <source srcset="assets/gallery/kitchen2.webp" type="image/webp" />
+            <img src="assets/gallery/kitchen2.jpeg" alt="Kitchen countertop installation" width="400" height="300" loading="lazy" />
+          </picture>
           <div class="gallery-overlay">
-            <h3>Kitchen</h3>
+            <p>Kitchen</p>
           </div>
         </div>
 
         <div class="gallery-item fade-zoom" data-delay="400" data-category="commercial">
-          <img src="assets/gallery/office1.jpeg" alt="Commercial countertop installation" />
+          <picture>
+            <source srcset="assets/gallery/office1.webp" type="image/webp" />
+            <img src="assets/gallery/office1.jpeg" alt="Commercial countertop installation" width="400" height="300" loading="lazy" />
+          </picture>
           <div class="gallery-overlay">
-            <h3>Commercial</h3>
+            <p>Commercial</p>
           </div>
         </div>
 
         <div class="gallery-item fade-zoom" data-delay="500" data-category="bathroom">
-          <img src="assets/gallery/bathroom2.jpeg" alt="Bathroom countertop installation" />
+          <picture>
+            <source srcset="assets/gallery/bathroom2.webp" type="image/webp" />
+            <img src="assets/gallery/bathroom2.jpeg" alt="Bathroom countertop installation" width="400" height="300" loading="lazy" />
+          </picture>
           <div class="gallery-overlay">
-            <h3>Bathroom</h3>
+            <p>Bathroom</p>
           </div>
         </div>
 
         <div class="gallery-item fade-zoom" data-delay="600" data-category="kitchen">
-          <img src="assets/gallery/kitchen3.png" alt="Kitchen countertop installation" />
+          <picture>
+            <source srcset="assets/gallery/kitchen3.webp" type="image/webp" />
+            <img src="assets/gallery/kitchen3.png" alt="Kitchen countertop installation" width="400" height="300" loading="lazy" />
+          </picture>
           <div class="gallery-overlay">
-            <h3>Kitchen</h3>
+            <p>Kitchen</p>
           </div>
         </div>
 
         <div class="gallery-item fade-zoom" data-delay="700" data-category="kitchen">
-          <img src="assets/gallery/kitchen4.jpeg" alt="Kitchen countertop installation" />
+          <picture>
+            <source srcset="assets/gallery/kitchen4.webp" type="image/webp" />
+            <img src="assets/gallery/kitchen4.jpeg" alt="Kitchen countertop installation" width="400" height="300" loading="lazy" />
+          </picture>
           <div class="gallery-overlay">
-            <h3>Kitchen</h3>
+            <p>Kitchen</p>
           </div>
         </div>
       </section>
 
-      <section class="gallery-cta fade-down" data-delay="900">
-        <h2>Ready to Transform Your Space?</h2>
+      <section class="gallery-cta fade-down" data-delay="900" aria-labelledby="cta-heading">
+        <h2 id="cta-heading">Ready to Transform Your Space?</h2>
         <p>Get a free estimate for your custom countertop project</p>
         <a href="free-bid.html" class="btn-cta">Get a Free Bid</a>
       </section>

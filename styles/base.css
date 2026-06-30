@@ -26,9 +26,28 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 1rem;
+  z-index: 9999;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 1rem;
+}
+
 .logo {
   font-size: clamp(1.75rem, 4vw, 3rem);
   font-weight: 300;
+  text-decoration: none;
+  color: inherit;
 }
 
 nav {

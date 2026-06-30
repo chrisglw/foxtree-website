@@ -3,22 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Foxtree | Products</title>
+  <title>Our Products | Foxtree Countertops</title>
+  <meta name="description" content="Explore Foxtree Countertops' materials including laminate, butcher block, full and tile backsplash, and specialty edging options like GemLoc, Crescent, and Square." />
+  <link rel="canonical" href="https://foxtreecountertops.com/products.html" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Our Products | Foxtree Countertops" />
+  <meta property="og:description" content="Laminate, butcher block, backsplash options, and specialty edging. Custom countertops for any style and budget." />
+  <meta property="og:url" content="https://foxtreecountertops.com/products.html" />
+
   <link rel="stylesheet" href="styles/base.css" />
   <link rel="stylesheet" href="styles/products.css" />
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="site">
     <div id="site-nav"></div>
 
-    <main class="main-content">
-      <section class="product-section">
-        <h1 class="section-title fade-down" data-delay="100">Our Products</h1>
+    <main id="main-content" class="main-content">
+      <section class="product-section" aria-labelledby="products-heading">
+        <h1 id="products-heading" class="section-title fade-down" data-delay="100">Our Products</h1>
         <p class="section-description fade-down" data-delay="200">
           We offer custom countertops, backsplash options, and specialty edging to fit any style and budget.
         </p>
 
-        <div class="material-filters fade-down" data-delay="300">
+        <div class="material-filters fade-down" data-delay="300" role="group" aria-label="Filter products by category">
           <button class="material-filter active" data-filter="all">All</button>
           <button class="material-filter" data-filter="countertop">Countertops</button>
           <button class="material-filter" data-filter="backsplash">Splash Options</button>
@@ -29,15 +39,21 @@
           <h2 class="group-title">Custom Countertops</h2>
           <div class="materials-grid">
             <div class="material-sample fade-zoom" data-delay="500">
-              <img src="assets/products/laminate.webp" alt="Laminate countertop" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 4 3%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27%23eeeeee%27/%3E%3C/svg%3E'" />
+              <picture>
+                <source srcset="assets/products/laminate.webp" type="image/webp" />
+                <img src="assets/products/laminate.webp" alt="Laminate countertop sample" width="320" height="200" loading="lazy" />
+              </picture>
               <div class="material-info">
                 <h3>Laminate</h3>
-                <p>Available in almost any color and style. Brands include <a href="https://www.formica.com" target="_blank" rel="noopener">Formica</a> and <a href="https://www.wilsonart.com" target="_blank" rel="noopener">Wilsonart</a>.</p>
+                <p>Available in almost any color and style. Brands include <a href="https://www.formica.com" target="_blank" rel="noopener noreferrer">Formica</a> and <a href="https://www.wilsonart.com" target="_blank" rel="noopener noreferrer">Wilsonart</a>.</p>
               </div>
             </div>
 
             <div class="material-sample fade-zoom" data-delay="600">
-              <img src="assets/products/butcherblock.webp" alt="Butcher block countertop" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 4 3%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27%23eeeeee%27/%3E%3C/svg%3E'" />
+              <picture>
+                <source srcset="assets/products/butcherblock.webp" type="image/webp" />
+                <img src="assets/products/butcherblock.webp" alt="Butcher block countertop sample" width="320" height="200" loading="lazy" />
+              </picture>
               <div class="material-info">
                 <h3>Butcher Block</h3>
                 <p>Solid wood countertops built to your specs. We create templates and work with the wood you choose.</p>
@@ -50,7 +66,10 @@
           <h2 class="group-title">Splash Options</h2>
           <div class="materials-grid">
             <div class="material-sample fade-zoom" data-delay="500">
-              <img src="assets/products/full-backsplash.webp" alt="Full backsplash" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 4 3%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27%23eeeeee%27/%3E%3C/svg%3E'" />
+              <picture>
+                <source srcset="assets/products/full-backsplash.webp" type="image/webp" />
+                <img src="assets/products/full-backsplash.webp" alt="Full backsplash sample" width="320" height="200" loading="lazy" />
+              </picture>
               <div class="material-info">
                 <h3>Full Backsplash</h3>
                 <p>Runs from the countertop up to the bottom of the upper cabinets. A popular choice for kitchens.</p>
@@ -58,7 +77,10 @@
             </div>
 
             <div class="material-sample fade-zoom" data-delay="600">
-              <img src="assets/products/tile-backsplash.webp" alt="Tile backsplash" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 4 3%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27%23eeeeee%27/%3E%3C/svg%3E'" />
+              <picture>
+                <source srcset="assets/products/tile-backsplash.webp" type="image/webp" />
+                <img src="assets/products/tile-backsplash.webp" alt="Tile backsplash sample" width="320" height="200" loading="lazy" />
+              </picture>
               <div class="material-info">
                 <h3>Tile Backsplash</h3>
                 <p>A great DIY project, or we can point you in the right direction with a recommendation.</p>
@@ -71,31 +93,43 @@
           <h2 class="group-title">Specialty Edging</h2>
           <div class="materials-grid">
             <div class="material-sample fade-zoom" data-delay="500">
-              <img src="assets/products/GemLoc-edge.webp" alt="GemLoc edge" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 4 3%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27%23eeeeee%27/%3E%3C/svg%3E'" />
+              <picture>
+                <source srcset="assets/products/GemLoc-edge.webp" type="image/webp" />
+                <img src="assets/products/GemLoc-edge.webp" alt="GemLoc edge profile sample" width="320" height="200" loading="lazy" />
+              </picture>
               <div class="material-info">
                 <h3>GemLoc Edge</h3>
-                <p>Decorative eased edge with a laminate face and solid surface beveled edge. Works with any laminate color or brand. A cost-effective upgrade.</p>              </div>
+                <p>Decorative eased edge with a laminate face and solid surface beveled edge. Works with any laminate color or brand. A cost-effective upgrade.</p>
+              </div>
             </div>
 
             <div class="material-sample fade-zoom" data-delay="600">
-              <img src="assets/products/crescent-edge.webp" alt="Crescent edge" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 4 3%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27%23eeeeee%27/%3E%3C/svg%3E'" />
+              <picture>
+                <source srcset="assets/products/crescent-edge.webp" type="image/webp" />
+                <img src="assets/products/crescent-edge.webp" alt="Crescent edge profile sample" width="320" height="200" loading="lazy" />
+              </picture>
               <div class="material-info">
                 <h3>Crescent Edge</h3>
-                <p>A soft curve decorative edge, similar in appearance to a bullnose granite edge. Works best with mid-tone or dark laminate colors.</p>              </div>
+                <p>A soft curve decorative edge, similar in appearance to a bullnose granite edge. Works best with mid-tone or dark laminate colors.</p>
+              </div>
             </div>
 
             <div class="material-sample fade-zoom" data-delay="700">
-              <img src="assets/products/square-edge.webp" alt="Square edge" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 4 3%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27%23eeeeee%27/%3E%3C/svg%3E'" />
+              <picture>
+                <source srcset="assets/products/square-edge.webp" type="image/webp" />
+                <img src="assets/products/square-edge.webp" alt="Square edge profile sample" width="320" height="200" loading="lazy" />
+              </picture>
               <div class="material-info">
                 <h3>Square Edge</h3>
-                <p>Our most popular style. Clean flat edge trim applied with specialty adhesive for a durable, long-lasting finish.</p>              </div>
+                <p>Our most popular style. Clean flat edge trim applied with specialty adhesive for a durable, long-lasting finish.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="product-cta fade-down" data-delay="500">
-        <h2>Need Help Choosing?</h2>
+      <section class="product-cta fade-down" data-delay="500" aria-labelledby="cta-heading">
+        <h2 id="cta-heading">Need Help Choosing?</h2>
         <p>Our experts can guide you to the perfect materials and edge profiles for your project.</p>
         <a href="free-bid.html" class="btn-cta">Get a Free Bid</a>
       </section>

@@ -1,5 +1,3 @@
-window.onbeforeunload = () => window.scrollTo(0, 0);
-
 function getActivePage() {
   const path = window.location.pathname;
   if (path.includes('products')) return 'products';
@@ -23,11 +21,11 @@ function renderNav() {
 
   document.getElementById('site-nav').innerHTML = `
     <header class="main-header">
-      <h1 class="logo">FOXTREE</h1>
-      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <a href="index.html" class="logo" aria-label="Foxtree Countertops home">FOXTREE</a>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-      <nav>${navLinks}</nav>
+      <nav aria-label="Main navigation">${navLinks}</nav>
       <a href="tel:+12082411858" class="btn-number">(208) 241-1858</a>
     </header>
   `;
@@ -55,11 +53,11 @@ function renderFooter() {
           <p class="footer-tagline">Custom countertops built to last.</p>
         </div>
         <div class="footer-social">
-          <a href="https://www.facebook.com/foxtreecountertops/" target="_blank" aria-label="Facebook">
-            <img src="assets/Facebook_Logo_Primary.png" alt="Facebook" />
+          <a href="https://www.facebook.com/foxtreecountertops/" target="_blank" rel="noopener noreferrer" aria-label="Visit Foxtree on Facebook (opens in new tab)">
+            <img src="assets/Facebook_Logo_Primary.webp" alt="" width="28" height="28" loading="lazy" />
           </a>
-          <a href="https://www.instagram.com/foxtree_countertops" target="_blank" aria-label="Instagram">
-            <img src="assets/instagram_icon.png" alt="Instagram" />
+          <a href="https://www.instagram.com/foxtree_countertops" target="_blank" rel="noopener noreferrer" aria-label="Visit Foxtree on Instagram (opens in new tab)">
+            <img src="assets/instagram_icon.webp" alt="" width="28" height="28" loading="lazy" />
           </a>
         </div>
         <div class="footer-contact">
@@ -70,7 +68,7 @@ function renderFooter() {
       </div>
       <div class="footer-bottom">
         <span>&copy; ${new Date().getFullYear()} Foxtree LLC. All Rights Reserved.</span>
-        <span class="dev-credit">Developed by <a href="https://www.christianguevaraportfolio.com/">Christian Guevara</a></span>
+        <span class="dev-credit">Developed by <a href="https://www.christianguevaraportfolio.com/" rel="noopener noreferrer">Christian Guevara</a></span>
       </div>
     </footer>
   `;
